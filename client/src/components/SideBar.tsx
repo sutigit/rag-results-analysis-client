@@ -1,10 +1,4 @@
-import { getFolderStructure } from "../utils/getFolderStructure";
-
 export default function SideBar() {
-  const jotain = getFolderStructure("/test_folder");
-
-  console.log(jotain);
-
   return (
     <div className="min-w-sm border-r border-zinc-700 p-10">
       <h2>Overview</h2>
