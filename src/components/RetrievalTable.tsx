@@ -6,7 +6,7 @@ export default function RetrievalTable() {
       <h2>Retrieval</h2>
       <Table>
         <TableHeader>
-          <TableCell>Question</TableCell>
+          <TableCell>Query</TableCell>
           <TableCell>Retrieved documents</TableCell>
           <TableCell>Accuracy</TableCell>
           <TableCell>Precision</TableCell>

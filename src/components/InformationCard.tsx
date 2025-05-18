@@ -31,21 +31,25 @@ export default function InformationCard() {
       <div className="flex-1 px-10 flex flex-col gap-8">
         <div>
           <h3>Test information</h3>
-          {Object.entries(testInformation).map(([key, value]) => (
-            <div key={key} className="flex flex-row gap-2">
-              <p className="font-bold text-lime-300">{key}:</p>
-              <p>{value}</p>
-            </div>
-          ))}
+          <div className="flex flex-col gap-1">
+            {Object.entries(testInformation).map(([key, value]) => (
+              <div key={key} className="flex flex-row gap-2">
+                <p className="font-bold text-lime-300">{key}:</p>
+                <p>{value}</p>
+              </div>
+            ))}
+          </div>
         </div>
         <div>
           <h3>Assistant profile</h3>
-          {Object.entries(assitantProfile).map(([key, value]) => (
-            <div key={key} className="flex flex-row gap-2">
-              <p className="font-bold text-orange-300">{key}:</p>
-              <p>{typeof value === "string" ? value : value.join(", ")}</p>
-            </div>
-          ))}
+          <div className="flex flex-col gap-1">
+            {Object.entries(assitantProfile).map(([key, value]) => (
+              <div key={key} className="flex flex-row gap-2">
+                <p className="font-bold text-orange-300">{key}:</p>
+                <p>{typeof value === "string" ? value : value.join(", ")}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

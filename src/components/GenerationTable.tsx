@@ -6,7 +6,7 @@ export default function GenerationTable() {
       <h2>Generation</h2>
       <Table>
         <TableHeader>
-          <TableCell>Question</TableCell>
+          <TableCell>Query</TableCell>
           <TableCell>RAG answer</TableCell>
           <TableCell>Acual answer</TableCell>
           <TableCell>LLM-evaluated score</TableCell>
