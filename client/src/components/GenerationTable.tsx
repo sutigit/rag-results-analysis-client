@@ -6,18 +6,30 @@ export default function GenerationTable() {
       <h2>Generation</h2>
       <Table>
         <TableHeader>
-          <TableCell>Query</TableCell>
-          <TableCell>RAG answer</TableCell>
-          <TableCell>Acual answer</TableCell>
-          <TableCell>LLM-evaluated score</TableCell>
-          <TableCell>Self-evaluated score</TableCell>
+          <TableCell flex={2} align="center">
+            Query
+          </TableCell>
+          <TableCell flex={2} align="center">
+            RAG answer
+          </TableCell>
+          <TableCell flex={2} align="center">
+            Acual answer
+          </TableCell>
+          <TableCell align="center">LLM-evaluated score</TableCell>
+          <TableCell align="center">Self-evaluated score</TableCell>
         </TableHeader>
         <TableRow>
-          <TableCell>Cell 1</TableCell>
-          <TableCell>Cell 2</TableCell>
-          <TableCell>Cell 3</TableCell>
-          <TableCell>4.2/5</TableCell>
-          <TableCell>4/5</TableCell>
+          <TableCell flex={2}>Mikä on scrumbut??</TableCell>
+          <TableCell flex={2}>
+            Scrumbut on ohjelmistokehityksen termi, joka kuvaa tiimiä, joka
+            noudattaa Scrumia, mutta tekee siitä poikkeuksia ("Scrum, but...").
+          </TableCell>
+          <TableCell flex={2}>
+            Scrumbut on ohjelmistokehityksen termi, joka kuvaa tiimiä, joka
+            noudattaa Scrumia, mutta tekee siitä poikkeuksia ("Scrum, but...").
+          </TableCell>
+          <TableCell align="center">4.2/5</TableCell>
+          <TableCell align="center">4/5</TableCell>
         </TableRow>
       </Table>
     </div>

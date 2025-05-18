@@ -1,6 +1,17 @@
-export const TableCell = ({ children }: { children: React.ReactNode }) => {
+export const TableCell = ({
+  flex = 1,
+  align = "left",
+  children,
+}: {
+  flex?: number;
+  align?: "left" | "center" | "right";
+  children: React.ReactNode;
+}) => {
   return (
-    <div className="min-w-60 px-4 py-3 flex-1 border-zinc-600 border-l last:border-r">
+    <div
+      style={{ flex: flex, textAlign: align }}
+      className={`min-w-60 p-4 border-zinc-600 border-l last:border-r`}
+    >
       {children}
     </div>
   );
