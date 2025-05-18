@@ -1,7 +1,7 @@
 export default function SideBar() {
   return (
     <div className="min-w-sm border-r border-zinc-700 p-10">
-      <h2>Overview</h2>
+      <h2>Docs</h2>
       <div className="flex flex-col gap-2">
         <p>Introduction</p>
         <p>Analysis</p>
